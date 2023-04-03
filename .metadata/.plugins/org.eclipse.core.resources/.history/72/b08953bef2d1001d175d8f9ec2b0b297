@@ -1,0 +1,272 @@
+package SampleProject;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.awt.Toolkit;
+import java.awt.Window.Type;
+import javax.swing.JToolBar;
+
+public class EmployeeDetails {
+
+	JFrame EmployeeDetails;
+	private JTextField textField_1;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_6;
+	private JTextField textField_7;
+	private JLabel icon_pic;
+	private JTextField textField;
+	private JLabel lblNewLabel;
+	private JLabel lblHoursWorked_1;
+	private JLabel lblHoursWorked_2;
+	private JTextField textField_15;
+	private JLabel lblWeeklyBreakdownOf;
+	private JLabel lblHoursWorked_3;
+	private JLabel lblHoursWorked_4;
+	private JTextField textField_5;
+	private JTextField textField_8;
+	private JTextField textField_9;
+	private JLabel lblHoursWorked_5;
+	private JTextField textField_2;
+	private JTextField textField_10;
+	private JLabel lblHoursWorked_6;
+	private JTextField textField_11;
+	private JTextField textField_12;
+	private JLabel lblHoursWorked_7;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					EmployeeDetails window = new EmployeeDetails();
+					window.EmployeeDetails.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public EmployeeDetails() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		EmployeeDetails = new JFrame();
+		EmployeeDetails.setResizable(false);
+		EmployeeDetails.setBackground(new Color(184, 180, 201));
+		EmployeeDetails.setForeground(new Color(255, 255, 255));
+		EmployeeDetails.setTitle("MotorPH");
+		EmployeeDetails.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (8).png"));
+		EmployeeDetails.getContentPane().setBackground(new Color(214, 225, 226));
+		EmployeeDetails.setBounds(100, 100, 698, 716);
+		EmployeeDetails.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		EmployeeDetails.getContentPane().setLayout(null);
+		
+		textField_6 = new JTextField();
+		textField_6.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_6.setEnabled(false);
+		textField_6.setColumns(10);
+		textField_6.setBounds(270, 54, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_6);
+		
+		JLabel lblHourlyPay = new JLabel("Hourly Pay");
+		lblHourlyPay.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHourlyPay.setBounds(270, 21, 150, 34);
+		EmployeeDetails.getContentPane().add(lblHourlyPay);
+		
+		textField_7 = new JTextField();
+		textField_7.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_7.setEnabled(false);
+		textField_7.setColumns(10);
+		textField_7.setBounds(270, 169, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_7);
+		
+		JLabel lblHoursWorked = new JLabel("Weekly breakdown of hours worked");
+		lblHoursWorked.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		lblHoursWorked.setBounds(271, 154, 390, 13);
+		EmployeeDetails.getContentPane().add(lblHoursWorked);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 0, 232, 679);
+		EmployeeDetails.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(24, 321, 187, 27);
+		panel.add(textField_1);
+		textField_1.setEnabled(false);
+		textField_1.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_1.setColumns(10);
+		
+		JLabel lblLastName = new JLabel("Last Name");
+		lblLastName.setBounds(25, 306, 86, 13);
+		panel.add(lblLastName);
+		lblLastName.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField.setEnabled(false);
+		textField.setColumns(10);
+		textField.setBounds(24, 385, 187, 27);
+		panel.add(textField);
+		
+		JLabel lblFirstName = new JLabel("First Name");
+		lblFirstName.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		lblFirstName.setBounds(25, 370, 86, 13);
+		panel.add(lblFirstName);
+		
+		icon_pic = new JLabel("");
+		icon_pic.setBounds(36, 22, 151, 172);
+		panel.add(icon_pic);
+		icon_pic.setIcon(new ImageIcon("C:\\Users\\shane\\Downloads\\741-7413047_employee-png-grey-transparent-png (1).png"));
+		icon_pic.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		
+		textField_4 = new JTextField();
+		textField_4.setBounds(24, 451, 187, 27);
+		panel.add(textField_4);
+		textField_4.setEnabled(false);
+		textField_4.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_4.setColumns(10);
+		
+		JLabel lblBirthday = new JLabel("Birthday");
+		lblBirthday.setBounds(25, 436, 186, 13);
+		panel.add(lblBirthday);
+		lblBirthday.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		
+		textField_3 = new JTextField();
+		textField_3.setBounds(24, 258, 187, 27);
+		panel.add(textField_3);
+		textField_3.setEnabled(false);
+		textField_3.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_3.setColumns(10);
+		
+		JLabel lblEmployeeNumber = new JLabel("Employee Number");
+		lblEmployeeNumber.setBounds(25, 243, 150, 13);
+		panel.add(lblEmployeeNumber);
+		lblEmployeeNumber.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		
+		lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (1).png"));
+		lblNewLabel.setBounds(-138, 507, 360, 137);
+		panel.add(lblNewLabel);
+		
+		lblHoursWorked_1 = new JLabel("Hours Worked");
+		lblHoursWorked_1.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_1.setBounds(270, 91, 150, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_1);
+		
+		lblHoursWorked_2 = new JLabel(" Monthly Gross Salary");
+		lblHoursWorked_2.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_2.setBounds(270, 206, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_2);
+		
+		textField_15 = new JTextField();
+		textField_15.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_15.setEnabled(false);
+		textField_15.setColumns(10);
+		textField_15.setBounds(270, 285, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_15);
+		
+		lblWeeklyBreakdownOf = new JLabel("Weekly breakdown of gross salary");
+		lblWeeklyBreakdownOf.setFont(new Font("Century Gothic", Font.BOLD, 13));
+		lblWeeklyBreakdownOf.setBounds(270, 268, 390, 17);
+		EmployeeDetails.getContentPane().add(lblWeeklyBreakdownOf);
+		
+		lblHoursWorked_3 = new JLabel("PAG-IBIG");
+		lblHoursWorked_3.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_3.setBounds(270, 322, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_3);
+		
+		lblHoursWorked_4 = new JLabel("SSS");
+		lblHoursWorked_4.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_4.setBounds(270, 460, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_4);
+		
+		textField_5 = new JTextField();
+		textField_5.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_5.setEnabled(false);
+		textField_5.setColumns(10);
+		textField_5.setBounds(270, 121, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_5);
+		
+		textField_8 = new JTextField();
+		textField_8.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_8.setEnabled(false);
+		textField_8.setColumns(10);
+		textField_8.setBounds(270, 237, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_8);
+		
+		textField_9 = new JTextField();
+		textField_9.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_9.setEnabled(false);
+		textField_9.setColumns(10);
+		textField_9.setBounds(270, 564, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_9);
+		
+		lblHoursWorked_5 = new JLabel(" Monthly Net Salary");
+		lblHoursWorked_5.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_5.setBounds(270, 533, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_5);
+		
+		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_2.setEnabled(false);
+		textField_2.setColumns(10);
+		textField_2.setBounds(270, 352, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_2);
+		
+		textField_10 = new JTextField();
+		textField_10.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_10.setEnabled(false);
+		textField_10.setColumns(10);
+		textField_10.setBounds(270, 493, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_10);
+		
+		lblHoursWorked_6 = new JLabel("Philhealth");
+		lblHoursWorked_6.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_6.setBounds(270, 393, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_6);
+		
+		textField_11 = new JTextField();
+		textField_11.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_11.setEnabled(false);
+		textField_11.setColumns(10);
+		textField_11.setBounds(270, 423, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_11);
+		
+		textField_12 = new JTextField();
+		textField_12.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		textField_12.setEnabled(false);
+		textField_12.setColumns(10);
+		textField_12.setBounds(270, 632, 391, 27);
+		EmployeeDetails.getContentPane().add(textField_12);
+		
+		lblHoursWorked_7 = new JLabel("Total Deductions");
+		lblHoursWorked_7.setFont(new Font("Century Gothic", Font.BOLD, 20));
+		lblHoursWorked_7.setBounds(270, 601, 216, 34);
+		EmployeeDetails.getContentPane().add(lblHoursWorked_7);
+	}
+
+	public void setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+}
