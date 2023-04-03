@@ -89,7 +89,7 @@ public class EmployeeDetails {
 		EmployeeDetails.setBackground(new Color(184, 180, 201));
 		EmployeeDetails.setForeground(new Color(255, 255, 255));
 		EmployeeDetails.setTitle("MotorPH");
-		EmployeeDetails.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (8).png"));
+		EmployeeDetails.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\shane\\eclipse-workspace\\MotorPH_HRIS\\src\\Data\\Motorcycle Racing Logo (8).png"));
 		EmployeeDetails.getContentPane().setBackground(new Color(214, 225, 226));
 		EmployeeDetails.setBounds(100, 100, 698, 603);
 		EmployeeDetails.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -139,7 +139,7 @@ public class EmployeeDetails {
 		icon_pic = new JLabel("");
 		icon_pic.setBounds(36, 22, 151, 172);
 		panel.add(icon_pic);
-		icon_pic.setIcon(new ImageIcon("C:\\Users\\shane\\Downloads\\741-7413047_employee-png-grey-transparent-png (1).png"));
+		icon_pic.setIcon(new ImageIcon("C:\\Users\\shane\\eclipse-workspace\\MotorPH_HRIS\\src\\Data\\741-7413047_employee-png-grey-transparent-png (1).png"));
 		icon_pic.setFont(new Font("Century Gothic", Font.BOLD, 13));
 		
 		Bday_txtbox = new JTextField();
@@ -167,7 +167,7 @@ public class EmployeeDetails {
 		EmpNum_label.setFont(new Font("Century Gothic", Font.BOLD, 13));
 		
 		lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (1).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\shane\\eclipse-workspace\\MotorPH_HRIS\\src\\Data\\Motorcycle Racing Logo (1).png"));
 		lblNewLabel.setBounds(-138, 432, 360, 137);
 		panel.add(lblNewLabel);
 		

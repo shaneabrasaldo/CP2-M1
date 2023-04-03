@@ -54,7 +54,7 @@ public class EmployeeLogin {
 		EmployeeLogin = new JFrame();
 		EmployeeLogin.setResizable(false);
 		EmployeeLogin.setFont(new Font("Century Gothic", Font.BOLD, 14));
-		EmployeeLogin.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (8).png"));
+		EmployeeLogin.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\shane\\eclipse-workspace\\MotorPH_HRIS\\src\\Data\\Motorcycle Racing Logo (8).png"));
 		EmployeeLogin.setTitle("MotorPH");
 		EmployeeLogin.setBounds(100, 100, 770, 365);
 		EmployeeLogin.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -140,7 +140,7 @@ public class EmployeeLogin {
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel_1_1_2 = new JLabel("");
-		lblNewLabel_1_1_2.setIcon(new ImageIcon("C:\\Users\\shane\\Downloads\\Motorcycle Racing Logo (1).png"));
+		lblNewLabel_1_1_2.setIcon(new ImageIcon("C:\\Users\\shane\\eclipse-workspace\\MotorPH_HRIS\\src\\Data\\Motorcycle Racing Logo (1).png"));
 		lblNewLabel_1_1_2.setFont(new Font("Century Gothic", Font.PLAIN, 14));
 		lblNewLabel_1_1_2.setBounds(-39, 83, 376, 157);
 		panel_1.add(lblNewLabel_1_1_2);
